@@ -14,6 +14,7 @@ namespace AdventureWorksNS.Data
             this IServiceCollection services, 
             string strCnx = "Data Source=DESKTOP-S0NQNAG;Initial Catalog=AdventureWorksLT2019;Integrated Security=false;User=sa;Password=GalileoPrueba;")
         {
+            // Este sera el puente para RAZOR
             services.AddDbContext<AdventureWorksDB>(options => options.UseSqlServer(strCnx));
             return services;
         }
